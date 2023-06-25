@@ -20,7 +20,8 @@ args = parser.parse_args()
 logging.basicConfig(
     filename='weather_logger.log', 
     filemode='w', 
-    format='%(name)s - %(levelname)s - %(message)s'
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S'
 )
 
 # Station id used by EC, e.g. 
