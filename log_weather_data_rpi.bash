@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
-# Run weather forecast data retrieval jobs
+# Script to Run weather forecast data retrieval jobs
+#
+# Instructions
+#  1. Remember to make this file executable by executing:
+#
+#   chmod +x log_weather_data_rpi.bash
+#
+# 2. Then add it as a job to the crontab:
+#
+#   crontab -e
+#
 
-dir=~/pi/code/weather-logger/
+dir=/home/pi/code/weather-logger/
 cd $dir
 
 # Vancouver forecast
